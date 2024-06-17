@@ -101,6 +101,8 @@ class MainActivity : ComponentActivity() {
             MainApp()
             //third branch feature
             val c : Int
+            //fourth branch feature
+            val d:Int
         }
     }
 }
