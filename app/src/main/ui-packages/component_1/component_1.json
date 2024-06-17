@@ -1,0 +1,274 @@
+{
+  "name": "component_1",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "WfdlzjqeZG4SVPhG8ZASqL",
+    "node": "251:248",
+    "version": "5976268724",
+    "component-id": "8defbad0b366f7b8192c28344d4f4d7ed0337572"
+  },
+  "default": "default",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      }
+    ],
+    "modes": {
+      "default": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": "$icon",
+            "clip-content": false
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "icon": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "name": "Property 1=person",
+      "design": "default",
+      "size": {
+        "width": 21.0,
+        "height": 20.045454025268555
+      },
+      "parameters": {
+        "icon": [
+          {
+            "type": "group",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 21.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.045454025268555
+              }
+            },
+            "is-structured": false,
+            "children": [
+              {
+                "type": "vector",
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  }
+                },
+                "vector-content": "vector.svg"
+              }
+            ],
+            "clip-content": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Property 1=email",
+      "design": "default",
+      "size": {
+        "width": 21.0,
+        "height": 21.012271881103516
+      },
+      "parameters": {
+        "icon": [
+          {
+            "type": "group",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 21.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 21.012271881103516
+              }
+            },
+            "is-structured": false,
+            "children": [
+              {
+                "type": "vector",
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  }
+                },
+                "vector-content": "vector1.svg"
+              }
+            ],
+            "clip-content": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Property 1=password",
+      "design": "default",
+      "size": {
+        "width": 21.0,
+        "height": 21.0
+      },
+      "parameters": {
+        "icon": [
+          {
+            "type": "group",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 21.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 21.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              {
+                "type": "vector",
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  }
+                },
+                "vector-content": "vector2.svg"
+              }
+            ],
+            "clip-content": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Property 1=Variant4",
+      "design": "default",
+      "size": {
+        "width": 21.0,
+        "height": 20.045454025268555
+      },
+      "parameters": {
+        "icon": [
+          {
+            "type": "group",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 3.125244140625
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": -1.42041015625
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 13.749597549438477
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 15.749422073364258
+              }
+            },
+            "is-structured": false,
+            "children": [
+              {
+                "type": "group",
+                "is-structured": false,
+                "children": [
+                  {
+                    "type": "vector",
+                    "alignment": {
+                      "horizontal": {
+                        "attachment": "start",
+                        "offset": -0.75
+                      },
+                      "vertical": {
+                        "attachment": "start",
+                        "offset": -0.75
+                      }
+                    },
+                    "size-constraints": {
+                      "width-constraints": {
+                        "sizing-mode": "proportional",
+                        "value": 1.0
+                      },
+                      "height-constraints": {
+                        "sizing-mode": "proportional",
+                        "value": 1.0
+                      }
+                    },
+                    "vector-content": "vector3.svg"
+                  },
+                  {
+                    "type": "vector",
+                    "margin": {
+                      "left": 5.04150390625,
+                      "top": 4.375,
+                      "right": 5.04142689704895,
+                      "bottom": 7.874422073364258
+                    },
+                    "alignment": {
+                      "horizontal": {
+                        "attachment": "start",
+                        "offset": -0.75
+                      },
+                      "vertical": {
+                        "attachment": "start",
+                        "offset": -0.75
+                      }
+                    },
+                    "size-constraints": {
+                      "width-constraints": {
+                        "sizing-mode": "proportional",
+                        "value": 1.0
+                      },
+                      "height-constraints": {
+                        "sizing-mode": "proportional",
+                        "value": 1.0
+                      }
+                    },
+                    "vector-content": "vector4.svg"
+                  }
+                ],
+                "clip-content": false
+              }
+            ],
+            "clip-content": false
+          }
+        ]
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

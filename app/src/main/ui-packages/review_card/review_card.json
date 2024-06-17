@@ -1,0 +1,272 @@
+{
+  "name": "review_card",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "WfdlzjqeZG4SVPhG8ZASqL",
+    "node": "173:289",
+    "version": "5976268724",
+    "component-id": "5c861b8ac8291097ffb4822d70d96a2a4bc18075"
+  },
+  "default": "ReviewCard",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Ayse Yavuz"
+      },
+      {
+        "type": "text",
+        "id": "Amazing. The room is good than the picture"
+      },
+      {
+        "type": "text",
+        "id": "4.0"
+      },
+      {
+        "type": "group",
+        "id": "profile_female"
+      },
+      {
+        "type": "group",
+        "id": "iconoir:star-solid"
+      }
+    ],
+    "modes": {
+      "ReviewCard": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "Ayse Yavuz",
+              "Amazing. The room is good than the picture",
+              "4.0",
+              "profile_female",
+              "iconoir:star-solid"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Ayse Yavuz",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 58.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 0.0
+              }
+            },
+            "font-weight": 500.0,
+            "text-content": "$text_Name",
+            "overflow": "visible",
+            "text-size": 17.0,
+            "line-height": 1.4599999820484835,
+            "typeface": "FONTSPRING DEMO - Oktah Round Medium"
+          },
+          {
+            "id": "Amazing. The room is good than the picture",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 57.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 25.0
+              }
+            },
+            "font-weight": 200.0,
+            "text-content": "$text_Desc",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": 1.4600000381469727,
+            "typeface": "FONTSPRING DEMO - Oktah Round Light"
+          },
+          {
+            "id": "4.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 285.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 6.0
+              }
+            },
+            "font-weight": 510.0,
+            "text-content": "$text_rate",
+            "overflow": "visible",
+            "text-size": 17.0,
+            "line-height": 1.193359375,
+            "typeface": "SF Pro"
+          },
+          {
+            "id": "profile_female",
+            "border-radius": 66.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 13.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 45.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 45.0
+              }
+            },
+            "is-structured": false,
+            "children": "$icon_Profile",
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 295.2173913043478,
+              "saturation": 0.5609756097560976,
+              "value": 0.9647058823529412
+            }
+          },
+          {
+            "id": "iconoir:star-solid",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 262.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 4.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "is-structured": false,
+            "children": "$icon_Star"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "text_Name": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "text_Desc": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "text_rate": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "icon_Profile": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    },
+    "icon_Star": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "ReviewCard",
+      "size": {
+        "width": 312.0,
+        "height": 65.0
+      },
+      "parameters": {
+        "text_Name": "Ayse Yavuz",
+        "text_Desc": "Amazing. The room is good \nthan the picture",
+        "text_rate": "4.0",
+        "icon_Profile": [
+          {
+            "type": "vector",
+            "margin": 10.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ],
+        "icon_Star": [
+          {
+            "type": "vector",
+            "margin": {
+              "left": 1.668914794921875,
+              "top": 2.08349609375,
+              "right": 1.6674022674560547,
+              "bottom": 2.083193778991699
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": -0.75
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": -0.75
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "vector1.svg"
+          }
+        ]
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

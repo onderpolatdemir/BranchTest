@@ -1,0 +1,255 @@
+{
+  "name": "button_short",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "WfdlzjqeZG4SVPhG8ZASqL",
+    "node": "22:9",
+    "version": "5976268724",
+    "component-id": "5759bfc3fa6cadc9014473e30259fe1710ac2f68"
+  },
+  "default": "Secondary",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Button"
+      }
+    ],
+    "modes": {
+      "Secondary": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": 10.0,
+            "border-radius": 23.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
+              },
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Button"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 286.9230769230769,
+              "saturation": 0.3804878048780488,
+              "value": 0.803921568627451
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Button",
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "text-size": 32.0,
+            "line-height": 1.4600000381469727,
+            "typeface": "FONTSPRING DEMO - Oktah Round Medium"
+          }
+        ]
+      },
+      "Primary": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": 10.0,
+            "border-radius": 23.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
+              },
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Button"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 284.65116279069764,
+              "saturation": 0.5512820512820513,
+              "value": 0.611764705882353
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Button",
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "text-size": 32.0,
+            "line-height": 1.4600000381469727,
+            "typeface": "FONTSPRING DEMO - Oktah Round Medium"
+          }
+        ]
+      },
+      "Outlined": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": 10.0,
+            "border-radius": 23.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
+              },
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": 2.0,
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 284.65116279069764,
+              "saturation": 0.5512820512820513,
+              "value": 0.611764705882353
+            },
+            "arrangement": "row",
+            "children": [
+              "Button"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Button",
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 284.65116279069764,
+              "saturation": 0.5512820512820513,
+              "value": 0.611764705882353
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "text-size": 32.0,
+            "line-height": 1.4600000381469727,
+            "typeface": "FONTSPRING DEMO - Oktah Round Medium"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Secondary",
+      "size": {
+        "width": 125.0,
+        "height": 67.0
+      },
+      "parameters": {
+        "text": "Button"
+      }
+    },
+    {
+      "design": "Primary",
+      "size": {
+        "width": 125.0,
+        "height": 67.0
+      },
+      "parameters": {
+        "text": "Button"
+      }
+    },
+    {
+      "design": "Outlined",
+      "size": {
+        "width": 125.0,
+        "height": 67.0
+      },
+      "parameters": {
+        "text": "Button"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

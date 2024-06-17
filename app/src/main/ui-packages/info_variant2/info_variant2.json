@@ -1,0 +1,200 @@
+{
+  "name": "info_variant2",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "WfdlzjqeZG4SVPhG8ZASqL",
+    "node": "225:241",
+    "version": "5976268724",
+    "component-id": "4ed54abe9a799af7136e27c57492b2deccb1aac9"
+  },
+  "default": "Info/Variant2",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Frame 24"
+      },
+      {
+        "type": "group",
+        "id": "Frame 23"
+      },
+      {
+        "type": "text",
+        "id": "Welcome"
+      },
+      {
+        "type": "text",
+        "id": "Back"
+      }
+    ],
+    "modes": {
+      "Info/Variant2": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": 19.0,
+              "right": 125.0
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Frame 24",
+              "Frame 23"
+            ],
+            "item-spacing": 26.0,
+            "clip-content": false
+          },
+          {
+            "id": "Frame 24",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": "$icon",
+            "item-spacing": 10.0,
+            "clip-content": false
+          },
+          {
+            "id": "Frame 23",
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Welcome",
+              "Back"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Welcome",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 139.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 41.0
+              }
+            },
+            "font-weight": 500.0,
+            "text-content": "$text1",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 28.0,
+            "line-height": 1.4600000381469727,
+            "typeface": "FONTSPRING DEMO - Oktah Round Medium"
+          },
+          {
+            "id": "Back",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 114.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 284.65116279069764,
+              "saturation": 0.5512820512820513,
+              "value": 0.611764705882353
+            },
+            "text-content": "$text2",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 28.0,
+            "line-height": 1.4600000381469727,
+            "typeface": "FONTSPRING DEMO - Oktah Round Medium"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "icon": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    },
+    "text1": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "text2": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Info/Variant2",
+      "size": {
+        "width": 459.0,
+        "height": 41.0
+      },
+      "parameters": {
+        "icon": [
+          {
+            "type": "group",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              {
+                "type": "vector",
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 36.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 20.0
+                  }
+                },
+                "vector-content": "vector.svg"
+              }
+            ],
+            "item-spacing": 10.0,
+            "clip-content": false
+          }
+        ],
+        "text1": "Welcome",
+        "text2": "Back"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

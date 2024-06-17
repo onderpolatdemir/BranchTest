@@ -1,0 +1,265 @@
+{
+  "name": "textbox_short",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "WfdlzjqeZG4SVPhG8ZASqL",
+    "node": "172:280",
+    "version": "5976268724",
+    "component-id": "e52f2f93e0c6a7eb1ee21ee163feea3216a1b31f"
+  },
+  "default": "Textbox_Short",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "user_name_textbox"
+      },
+      {
+        "type": "text",
+        "id": "DD/MM/YY"
+      },
+      {
+        "type": "group",
+        "id": "mynaui:location"
+      }
+    ],
+    "modes": {
+      "Textbox_Short": {
+        "rules": [
+          {
+            "id": "top_level",
+            "drop-shadow": {
+              "color": {
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
+              },
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "is-structured": false,
+            "children": [
+              "user_name_textbox",
+              "DD/MM/YY",
+              "mynaui:location"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "user_name_textbox",
+            "border-radius": 11.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 134.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 41.0
+              }
+            },
+            "vector-content": "user_name_textbox.svg"
+          },
+          {
+            "id": "DD/MM/YY",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 29.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 13.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 59.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 0.5098039215686274,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.0
+            },
+            "annotated-text-content": "$text",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 10.0,
+            "line-height": 1.4600000381469727,
+            "typeface": "FONTSPRING DEMO - Oktah Round Medium"
+          },
+          {
+            "id": "mynaui:location",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 7.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 10.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 22.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 21.0
+              }
+            },
+            "is-structured": false,
+            "children": "$icon"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "text": {
+      "data-type": "annotated-text-content",
+      "required": false,
+      "description": ""
+    },
+    "icon": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Textbox_Short",
+      "size": {
+        "width": 134.0,
+        "height": 41.0
+      },
+      "parameters": {
+        "text": {
+          "text": "DD/MM/YY",
+          "annotated-text-span-list": [
+            {
+              "span-start": 0,
+              "span-length": 2
+            },
+            {
+              "span-start": 2,
+              "span-length": 1,
+              "annotated-text-style": {
+                "font-weight": 510.0,
+                "typeface": "SF Pro"
+              }
+            },
+            {
+              "span-start": 3,
+              "span-length": 2
+            },
+            {
+              "span-start": 5,
+              "span-length": 1,
+              "annotated-text-style": {
+                "font-weight": 510.0,
+                "typeface": "SF Pro"
+              }
+            },
+            {
+              "span-start": 6,
+              "span-length": 2
+            }
+          ]
+        },
+        "icon": [
+          {
+            "type": "group",
+            "margin": {
+              "left": 4.125244140625,
+              "top": 2.625,
+              "right": 4.125158309936523,
+              "bottom": 2.625577926635742
+            },
+            "is-structured": false,
+            "children": [
+              {
+                "type": "vector",
+                "alignment": {
+                  "horizontal": {
+                    "attachment": "start",
+                    "offset": -0.75
+                  },
+                  "vertical": {
+                    "attachment": "start",
+                    "offset": -0.75
+                  }
+                },
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  }
+                },
+                "vector-content": "vector.svg"
+              },
+              {
+                "type": "vector",
+                "margin": {
+                  "left": 5.04150390625,
+                  "top": 4.375,
+                  "right": 5.04142689704895,
+                  "bottom": 7.874422073364258
+                },
+                "alignment": {
+                  "horizontal": {
+                    "attachment": "start",
+                    "offset": -0.75
+                  },
+                  "vertical": {
+                    "attachment": "start",
+                    "offset": -0.75
+                  }
+                },
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  }
+                },
+                "vector-content": "vector1.svg"
+              }
+            ],
+            "clip-content": false
+          }
+        ]
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

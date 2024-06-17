@@ -1,0 +1,188 @@
+{
+  "name": "label_box",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "WfdlzjqeZG4SVPhG8ZASqL",
+    "node": "219:287",
+    "version": "5976268724",
+    "component-id": "c0f30a40631c82f21fee06964974d68966b6c610"
+  },
+  "default": "Property 1=Default",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Frame 22"
+      },
+      {
+        "type": "text",
+        "id": "User Name"
+      }
+    ],
+    "modes": {
+      "Property 1=Default": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": 9.0,
+              "top": 8.0,
+              "right": 9.0,
+              "bottom": 8.0
+            },
+            "border-radius": 11.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
+              },
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": 1.5,
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 284.65116279069764,
+              "saturation": 0.5512820512820513,
+              "value": 0.611764705882353
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Frame 22",
+              "User Name"
+            ],
+            "item-spacing": 12.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Frame 22",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": "$icon",
+            "item-spacing": 10.0,
+            "clip-content": false
+          },
+          {
+            "id": "User Name",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 0.5098039215686274,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.0
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 20.0,
+            "line-height": 1.4600000381469727,
+            "typeface": "FONTSPRING DEMO - Oktah Round Medium"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "icon": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    },
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Property 1=Default",
+      "size": {
+        "width": 320.0,
+        "height": 45.0
+      },
+      "parameters": {
+        "icon": [
+          {
+            "type": "group",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 21.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.045454025268555
+              }
+            },
+            "is-structured": false,
+            "children": [
+              {
+                "type": "vector",
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  }
+                },
+                "vector-content": "vector.svg"
+              }
+            ],
+            "clip-content": false
+          }
+        ],
+        "text": "User Name"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
