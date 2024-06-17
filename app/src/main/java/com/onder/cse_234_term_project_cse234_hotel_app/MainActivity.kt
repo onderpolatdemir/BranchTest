@@ -101,6 +101,8 @@ class MainActivity : ComponentActivity() {
             MainApp()
             //third branch feature
             val c : Int
+            //master changes parallel to fourth branch
+            val e:Int
         }
     }
 }
