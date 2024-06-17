@@ -93,6 +93,8 @@ class MainActivity : ComponentActivity() {
 //
 //            }
 //https://github.com/onderpolatdemir/BranchTest.git
+            //newbranch features
+            val a: Int
             MainApp()
         }
     }
