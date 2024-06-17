@@ -99,6 +99,8 @@ class MainActivity : ComponentActivity() {
             //secondd branch feature
             val b: String
             MainApp()
+            //third branch feature
+            val c : Int
         }
     }
 }
