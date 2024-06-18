@@ -105,6 +105,8 @@ class MainActivity : ComponentActivity() {
             val e:Int
             //fourth branch feature
             val d:Int
+            //new features for fourthbranch
+            val f:Int
         }
     }
 }
