@@ -98,7 +98,7 @@ class MainActivity : ComponentActivity() {
             val a: Int
             //secondd branch feature
             val b: String
-            MainApp()
+            MainApp()   
             //third branch feature
             val c : Int
             //master changes parallel to fourth branch
