@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.onder.cse_234_term_project_cse234_hotel_app" />
+                  <option name="mobileSdkAppId" value="1:425387768501:android:aba5c4a6d6594d41539cfc" />
+                  <option name="projectId" value="hotel-app-ca13e" />
+                  <option name="projectNumber" value="425387768501" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

@@ -1,5 +1,6 @@
-package com.onder.cse_234_term_project_cse234_hotel_app
+package com.onder.cse_234_term_project_cse234_hotel_app.pages
 
+import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -9,20 +10,27 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.ImeAction
@@ -30,26 +38,49 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.MutableLiveData
 import androidx.navigation.NavHostController
-import com.onder.cse_234_term_project_cse234_hotel_app.navigation.Screen
+import com.onder.cse_234_term_project_cse234_hotel_app.CustomTextField
+import com.onder.cse_234_term_project_cse234_hotel_app.R
+import com.onder.cse_234_term_project_cse234_hotel_app.SimpleTopBar
+import com.onder.cse_234_term_project_cse234_hotel_app.TopBar
+import com.onder.cse_234_term_project_cse234_hotel_app.buttonlarge.ButtonLarge
+import com.onder.cse_234_term_project_cse234_hotel_app.buttonlarge.Design
+import com.onder.cse_234_term_project_cse234_hotel_app.buttonlarge.fONTSPRINGDEMOOktahRoundMedium
+import com.onder.cse_234_term_project_cse234_hotel_app.model.AuthState
+import com.onder.cse_234_term_project_cse234_hotel_app.model.AuthViewModel
+import com.onder.cse_234_term_project_cse234_hotel_app.navigation.AuthScreen
 
 
-//@Preview(
-//    showBackground = true,
-//    showSystemUi = true
-//)
 @Composable
-fun SignUpPage(navController: NavHostController) {
-    var userName by remember { mutableStateOf("") }
+fun SignUpPage(navController: NavHostController, authViewModel: AuthViewModel) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
-    var confirmPassword by remember { mutableStateOf("") }
     var termsAccepted by remember { mutableStateOf(false) }
+    var showDialog by remember { mutableStateOf(false) }
+
+    val authState = authViewModel.authState.observeAsState()
+    val context = LocalContext.current
+
+
+    LaunchedEffect(Unit) {
+        authViewModel.resetAuthState()
+    }
+
+    LaunchedEffect(authState.value) {
+        when (authState.value){
+            is AuthState.Authenticated -> navController.navigate(AuthScreen.Login.route)
+            is AuthState.Error -> Toast.makeText(context,
+                (authState.value as AuthState.Error).message, Toast.LENGTH_LONG).show()
+            else -> Unit
+        }
+    }
+    
 
     Scaffold(
         topBar = {
-            TopBar(
-                title = "Create",
+            SimpleTopBar(
+                title = "Create ",
                 title2 = "Account",
                 onBackClick = { navController.popBackStack() },
                 additionalTitle = "Fill your information below"
@@ -66,15 +97,6 @@ fun SignUpPage(navController: NavHostController) {
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-
-                //Text("Fill your information below")
-                CustomTextField(
-                    value = userName,
-                    onValueChange = { userName = it },
-                    placeholder = "User Name",
-                    leadingIcon = painterResource(id = R.drawable.component_1_vector) // Replace with your user icon
-                )
-
                 CustomTextField(
                     value = email,
                     onValueChange = { email = it },
@@ -98,26 +120,16 @@ fun SignUpPage(navController: NavHostController) {
                     )
                 )
 
-                CustomTextField(
-                    value = confirmPassword,
-                    onValueChange = { confirmPassword = it },
-                    placeholder = "Confirm Password",
-                    leadingIcon = painterResource(id = R.drawable.component_1_vector2), // Replace with your lock icon
-                    visualTransformation = PasswordVisualTransformation(),
-                    keyboardOptions = KeyboardOptions(
-                        keyboardType = KeyboardType.Password,
-                        imeAction = ImeAction.Done
-                    )
-                )
-
                 Spacer(modifier = Modifier.height(80.dp))
+
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier.padding(bottom = 16.dp)
                 ) {
                     Checkbox(
                         checked = termsAccepted,
-                        onCheckedChange = { termsAccepted = it }
+                        onCheckedChange = { termsAccepted = it },
+                        enabled = false
                     )
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
@@ -125,16 +137,31 @@ fun SignUpPage(navController: NavHostController) {
                         fontSize = 14.sp,
                         color = Color.Black
                     )
-                    TextButton(onClick = { /* Handle terms and conditions click */ }) {
+                    TextButton(onClick = { showDialog = true }) {
                         Text("Term&Conditions", color = colorResource(id = R.color.primary_Color))
                     }
                 }
 
+
                 Button(
-                    onClick = { navController.navigate(Screen.Login.route) },
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 32.dp,)
+                        .clip(RoundedCornerShape(50))
+                        .height(61.dp),
+                    onClick = {
+                        authViewModel.signUp(email,password)
+                    },
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = colorResource(id = R.color.primary_Color)
+                    ),
+                    enabled = termsAccepted && authState.value != AuthState.Loading
                 ) {
-                    Text("Create", fontSize = 32.sp)
+                    Text(
+                        text = "Create",
+                        fontSize =  28.0.sp,
+                        fontFamily = fONTSPRINGDEMOOktahRoundMedium,
+                    )
                 }
 
                 Spacer(modifier = Modifier.height(8.dp))
@@ -143,12 +170,44 @@ fun SignUpPage(navController: NavHostController) {
                     modifier = Modifier.padding(bottom = 16.dp)
                 ) {
                     Text("Already have an account?")
-                    TextButton(onClick = { navController.navigate(Screen.Login.route) }) {
-                        //navController.navigate(Screen.Login.route)
+                    TextButton(onClick = {
+                        navController.navigate(AuthScreen.Login.route) {
+                            popUpTo( AuthScreen.Main.route) { inclusive = false }
+                        }
+                    }) {
                         Text("Log In", color = colorResource(id = R.color.primary_Color))
                     }
                 }
             }
         }
     )
+
+    if (showDialog) {
+        AlertDialog(
+            onDismissRequest = { showDialog = false },
+            title = {
+                Text(text = "Terms & Conditions")
+            },
+            text = {
+                Text("Please read and accept the terms and conditions to proceed.")
+            },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        termsAccepted = true
+                        showDialog = false
+                    }
+                ) {
+                    Text("Yes")
+                }
+            },
+            dismissButton = {
+                Button(
+                    onClick = { showDialog = false }
+                ) {
+                    Text("No")
+                }
+            }
+        )
+    }
 }

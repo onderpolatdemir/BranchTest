@@ -13,26 +13,26 @@ sealed class BottomNavbarScreen(
     val icon: ImageVector
 ) {
     object Home : BottomNavbarScreen(
-        route = "home",
-        title = "Home",
+        route = "HOME",
+        title = "HOME",
         icon = Icons.Default.Home
     )
 
     object Favorites : BottomNavbarScreen(
-        route = "favorites",
-        title = "Favorites",
+        route = "FAVORITES",
+        title = "FAVORITES",
         icon = Icons.Default.Favorite
     )
 
     object Bookings : BottomNavbarScreen(
-        route = "my bookings",
-        title = "My Bookings",
+        route = "BOOKINGS",
+        title = "BOOKINGS",
         icon = Icons.Default.Settings
     )
 
     object Profile : BottomNavbarScreen(
-        route = "my bookings",
-        title = "My Bookings",
+        route = "PROFILE",
+        title = "PROFILE",
         icon = Icons.Default.Person
     )
 }
